@@ -1,0 +1,45 @@
+" CLion中ideavim专用的dotfiles
+
+" leader键为,
+let mapleader=","
+set easymotion
+
+" `^保证光标位置不变
+inoremap jj <Esc>`^
+
+" 移动windows
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+" 切换标签
+nnoremap gh gT 
+nnoremap gl gt
+
+" 全选
+nnoremap <C-a> ggVG
+vnoremap <C-a> <Esc>ggVG
+
+" 复制
+nnoremap <C-c> "+y
+vnoremap <C-c> "+y
+
+" 粘贴
+nnoremap <C-v> "+p
+vnoremap <C-v> "+p
+
+" 回车正常的行为
+nnoremap <CR> <Insert><CR><ESC>
+
+" BackSpace正常的行为
+nnoremap <BS> <Insert><BS><ESC>
+
+" 使用Plug-vim 插件管理
+call plug#begin()
+Plug 'tpope/vim-surround'
+Plug 'AlexPl292/IdeaVim-EasyMotion'
+call plug#end()
+ 
+" easymotion快速查询
+nmap ss <Plug>(easymotion-s2)
