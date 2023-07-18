@@ -27,7 +27,7 @@
       profile = default
       command = ""
     [[[window0]]]
-      size = 1260, 720  # 设置尺寸，以字符为单位
+      size = 1260, 720
       type = Window
       parent = ""
 [plugins]
