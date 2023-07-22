@@ -22,8 +22,13 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+" 插入模式下，移动光标
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+
+
 " 切换标签
-nnoremap gh gT 
+nnoremap gh gT
 nnoremap gl gt
 
 " 全选
@@ -44,6 +49,7 @@ nnoremap <CR> <Insert><CR><ESC>
 " BackSpace正常的行为
 nnoremap <BS> <Insert><BS><ESC>
 
+nnoremap <space> ciw
 
 
 call plug#begin()
