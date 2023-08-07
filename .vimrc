@@ -7,7 +7,7 @@ set number
 syntax on
 
 " 一些方便的映射
-let mapleader=","
+let mapleader=";"
 
 " 使用<leader>w来保存文件
 inoremap <leader>w <Esc>:w<cr>
@@ -26,9 +26,12 @@ noremap <C-l> <C-w>l
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 
+" CMD模式下，移动光标
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
 
 " 切换标签
-nnoremap gh gT
+nnoremap gh gT 
 nnoremap gl gt
 
 " 全选
@@ -46,8 +49,19 @@ vnoremap <C-v> "+p
 " 回车正常的行为
 nnoremap <CR> <Insert><CR><ESC>
 
-" BackSpace正常的行为
-nnoremap <BS> <Insert><BS><ESC>
+" backspace正常的行为
+nnoremap <BS> <INSERT><BS><ESC>
+
+" normal模式下的插入一行
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
+
+" 块状选择
+noremap <leader>v <C-v>
+
+" 左右滚动屏幕
+nnoremap <leader>l 20zl
+nnoremap <leader>h 20zh
 
 nnoremap <space> ciw
 

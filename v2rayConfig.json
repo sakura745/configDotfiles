@@ -15,7 +15,8 @@
         "destOverride": [
           "http",
           "tls"
-        ]
+        ],
+        "routeOnly": false
       },
       "settings": {
         "auth": "noauth",
@@ -33,7 +34,8 @@
         "destOverride": [
           "http",
           "tls"
-        ]
+        ],
+        "routeOnly": false
       },
       "settings": {
         "auth": "noauth",
@@ -49,11 +51,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "xx.xxx.xxxx.xxxx.xxx",
-            "port": xxxx,
+            "address": "xxx.xxx.xxx.xxx.xxx",
+            "port": xxxxx,
             "users": [
               {
-                "id": "xxxxxx-xxxxxxxx-xxxxxxxxxx-xxxx",
+                "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto"
@@ -86,7 +88,7 @@
     }
   ],
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
+    "domainStrategy": "AsIs",
     "rules": [
       {
         "type": "field",
@@ -97,6 +99,7 @@
         "enabled": true
       },
       {
+        "id": "4988770340245310530",
         "type": "field",
         "outboundTag": "direct",
         "domain": [
@@ -106,6 +109,7 @@
         "enabled": true
       },
       {
+        "id": "5063673995879521059",
         "type": "field",
         "outboundTag": "block",
         "domain": [
@@ -114,6 +118,7 @@
         "enabled": true
       },
       {
+        "id": "5099857615522201755",
         "type": "field",
         "outboundTag": "direct",
         "domain": [
@@ -122,6 +127,7 @@
         "enabled": true
       },
       {
+        "id": "5183911912482551548",
         "type": "field",
         "outboundTag": "direct",
         "ip": [
@@ -131,6 +137,7 @@
         "enabled": true
       },
       {
+        "id": "5088806784719097265",
         "type": "field",
         "port": "0-65535",
         "outboundTag": "proxy",

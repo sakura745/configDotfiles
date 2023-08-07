@@ -1,7 +1,7 @@
 " CLion中ideavim专用的dotfiles
 
 " leader键为,
-let mapleader=","
+let mapleader=";"
 set easymotion
 
 " `^保证光标位置不变
@@ -17,8 +17,12 @@ noremap <C-l> <C-w>l
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 
+" CMD模式下，移动光标
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
+
 " 切换标签
-nnoremap gh gT
+nnoremap gh gT 
 nnoremap gl gt
 
 " 全选
@@ -39,8 +43,18 @@ nnoremap <CR> <Insert><CR><ESC>
 " BackSpace正常的行为
 nnoremap <BS> <Insert><BS><ESC>
 
-nnoremap <space> ciw
+" normal模式下的插入一行
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
 
+" 块状选择
+noremap <leader>v <C-v>
+
+" 左右滚动屏幕
+nnoremap <leader>l 20zl
+nnoremap <leader>h 20zh
+
+nnoremap <space> ciw
 
 
 " 使用Plug-vim 插件管理
