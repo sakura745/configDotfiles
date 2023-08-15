@@ -25,6 +25,8 @@ noremap <C-l> <C-w>l
 " 插入模式下，移动光标
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
 
 " CMD模式下，移动光标
 cnoremap <C-b> <Left>

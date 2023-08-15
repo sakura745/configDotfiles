@@ -136,3 +136,6 @@ alias c2d="cd /home/carbo/Documents/gpt_academic/gpt_log;enterBase"
 alias h2m="python html2md.py" 
 #alias h2mN='python html2md.py "$(ls | sed -n "${1}p")"'
 alias clearLog="sudo journalctl --vacuum-size=100M"
+alias poweroff="systemctl poweroff -i"
+alias snapshotV="cp ~/.vimrc ~/Documents/configDotfiles/;cp ~/.ideavimrc ~/Documents/configDotfiles/"
+alias snapshotB="cp ~/.bashrc ~/Documents/configDotfiles/"
