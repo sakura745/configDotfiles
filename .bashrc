@@ -122,13 +122,17 @@ alias bwg="ssh -p '25987' root@'74.120.168.39'"
 alias f1='sudo systemctl start v2ray'
 alias f0='sudo systemctl stop v2ray'
 
-export http_proxy="socks5h://127.0.0.1:1080"
-export socks_proxy="socks5h://127.0.0.1:1080"
-export https_proxy="socks5h://127.0.0.1:1080"
+#export http_proxy="socks5h://127.0.0.1:1080"
+#export socks_proxy="socks5h://127.0.0.1:1080"
+#export https_proxy="socks5h://127.0.0.1:1080"
+alias daili="f1;export http_proxy='socks5h://127.0.0.1:1080';export socks_proxy='socks5h://127.0.0.1:1080';export https_proxy='socks5h://127.0.0.1:1080'"
 
 PS1="\[\033[1;36;01m\]\u\[\033[00m\]\[\033[1;34;01m\]@\[\033[00m\]\[\033[1;32;01m\]\h\[\033[00m\]\[\033[34;01m\]:\[\033[00m\]\[\033[36;01m\]\w\[\033[00m\]\[\033[35;01m\] \$\[\033[37;00m\] "
+
 source /opt/ros/noetic/setup.bash
 export PATH="/home/carbo/anaconda3/bin:$PATH"
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/carbo/Documents/ORB_SLAM3/Examples/ROS
+export PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:$PKG_CONFIG_PATH
 
 alias enterBase=". /home/carbo/anaconda3/bin/activate"
 alias gpt="f1;. /home/carbo/anaconda3/bin/activate;conda activate gptac;cd /home/carbo/Documents/gpt_academic;python main.py"
