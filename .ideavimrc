@@ -24,7 +24,7 @@ cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 
 " 切换标签
-nnoremap gh gT 
+nnoremap gh gT
 nnoremap gl gt
 
 " 全选
@@ -58,12 +58,15 @@ nnoremap <leader>h 20zh
 
 nnoremap <space> ciw
 
+" 回到上一步
+nnoremap <C-o> :action Back<CR>
+
 
 " 使用Plug-vim 插件管理
 call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'AlexPl292/IdeaVim-EasyMotion'
 call plug#end()
- 
+
 " easymotion快速查询
 nmap ss <Plug>(easymotion-s2)
