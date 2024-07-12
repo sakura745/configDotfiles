@@ -6,6 +6,11 @@ set number
 " 显示代码颜色
 syntax on
 
+" 在搜索时高亮匹配文本
+set hlsearch
+" 在输入搜索模式时实时高亮
+set incsearch
+
 " 一些方便的映射
 let mapleader=";"
 

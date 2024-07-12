@@ -7,6 +7,11 @@ set easymotion
 " `^保证光标位置不变
 inoremap jj <Esc>`^
 
+" 在搜索时高亮匹配文本
+set hlsearch
+" 在输入搜索模式时实时高亮
+set incsearch
+
 " 移动windows
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
